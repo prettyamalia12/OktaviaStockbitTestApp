@@ -182,7 +182,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_forgot_pass"
-        app:src="@drawable/bg_button_corner_dark" />
+        android:background="@drawable/bg_button_corner_dark" />
 
     <Button
         android:id="@+id/fingerprint_btn"
@@ -198,7 +198,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login_btn"
-        app:src="@drawable/bg_button_corner_accent" />
+        android:background="@drawable/bg_button_corner_accent" />
 
     <LinearLayout
         android:layout_width="wrap_content"

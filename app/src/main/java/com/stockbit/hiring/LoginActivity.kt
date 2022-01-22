@@ -20,7 +20,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
         setHeaderLayout()
     }
 
-    fun setHeaderLayout(){
+    private fun setHeaderLayout(){
         findViewById<ImageView>(R.id.imgLeftHeader)
             .setImageDrawable(ContextCompat.getDrawable(this, R.drawable.ic_back_arrow))
 
@@ -35,7 +35,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
         findViewById<ImageView>(R.id.imgLogo).visibility = View.GONE
     }
 
-    fun login(){
+    private fun login(){
         val username = findViewById<TextInputEditText>(R.id.username_tie)
         val password = findViewById<TextInputEditText>(R.id.password_tie)
 
@@ -47,7 +47,6 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
 
         if (stringUtils.isEmpty(password.text.toString())){
             stringUtils.setMessage(this, getString(R.string.username_empty))
-
             return
         }
 
