@@ -1,0 +1,20 @@
+<resources>
+    <string name="masuk">Masuk</string>
+    <string name="log_with_google">Masuk dengan Google</string>
+    <string name="log_with_fb">Masuk dengan Facebook</string>
+    <string name="or">atau</string>
+    <string name="username_or_email">Username or Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Lupa password</string>
+    <string name="login">Login</string>
+    <string name="log_with_fingerprint">Masuk dengan fingerprint</string>
+    <string name="dont_have_account">Belum punya akun?</string>
+    <string name="register_now">Daftar sekarang</string>
+    <string name="all_watchlist">All Watchlist</string>
+    <string name="add_symbol">Add Symbol</string>
+    <string name="watchlist">Watchlist</string>
+    <string name="stream">Stream</string>
+    <string name="search">Search</string>
+    <string name="chat">Chat</string>
+    <string name="portfolio">Portfolio</string>
+</resources>

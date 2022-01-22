@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Lenovo/Downloads/Stockbit Test (Android)/Stockbit Test/app/src/main/res/drawable/bg_button_corner_accent.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/Lenovo/Downloads/Stockbit Test (Android)/Stockbit Test/app/src/main/res/drawable/bg_button_corner_dark.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/Lenovo/Downloads/Stockbit Test (Android)/Stockbit Test/app/src/main/res/drawable/ic_back_arrow.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/Lenovo/Downloads/Stockbit Test (Android)/Stockbit Test/app/src/main/res/drawable/ic_help.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/Lenovo/Downloads/Stockbit Test (Android)/Stockbit Test/app/src/main/res/drawable/rounded_corner_layout.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/Lenovo/Downloads/Stockbit Test (Android)/Stockbit Test/app/src/main/res/layout/activity_login.xml" value="0.39959839357429716" />
+        <entry key="..\:/Users/Lenovo/Downloads/Stockbit Test (Android)/Stockbit Test/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Lenovo/Downloads/Stockbit Test (Android)/Stockbit Test/app/src/main/res/layout/layout_header.xml" value="0.5" />
+        <entry key="..\:/Users/Lenovo/Downloads/Stockbit Test (Android)/Stockbit Test/common/src/main/res/drawable/bg_button_corner_accent.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/Lenovo/Downloads/Stockbit Test (Android)/Stockbit Test/common/src/main/res/drawable/bg_button_corner_dark.xml" value="0.21614583333333334" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
