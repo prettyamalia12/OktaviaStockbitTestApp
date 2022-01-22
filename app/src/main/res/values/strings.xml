@@ -17,4 +17,7 @@
     <string name="search">Search</string>
     <string name="chat">Chat</string>
     <string name="portfolio">Portfolio</string>
+    <string name="username_empty">Username can\'t be empty</string>
+    <string name="password_empty">Password can\'t be empty</string>
+    <string name="feature_not_available">Sorry, this feature is not available yet</string>
 </resources>

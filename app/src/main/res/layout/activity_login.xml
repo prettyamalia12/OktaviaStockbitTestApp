@@ -22,6 +22,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:gravity="center_vertical"
+        android:onClick="onClick"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/include">
@@ -56,6 +57,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:gravity="center_vertical"
+        android:onClick="onClick"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/log_google_view">
@@ -174,12 +176,13 @@
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:onClick="onClick"
         android:text="@string/login"
         android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_forgot_pass"
-        app:src="@drawable/bg_button_corner_dark"/>
+        app:src="@drawable/bg_button_corner_dark" />
 
     <Button
         android:id="@+id/fingerprint_btn"
@@ -188,13 +191,14 @@
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
+        android:onClick="onClick"
         android:text="@string/log_with_fingerprint"
         android:textAllCaps="false"
         android:textColor="#2E7D32"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login_btn"
-        app:src="@drawable/bg_button_corner_accent"/>
+        app:src="@drawable/bg_button_corner_accent" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -220,9 +224,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center|center_vertical"
             android:layout_marginStart="8dp"
-            android:clickable="true"
-            android:focusable="auto"
             android:minHeight="12dp"
+            android:onClick="onClick"
             android:text="@string/register_now"
             android:textColor="@color/colorAccentDark"
             tools:ignore="TouchTargetSizeCheck" />

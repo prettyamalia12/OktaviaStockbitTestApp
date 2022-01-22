@@ -1,12 +1,10 @@
 apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion Versions.compileSdk
+    compileSdkVersion 30
     defaultConfig {
         minSdkVersion Versions.minSdk
         targetSdkVersion Versions.targetSdk
-        versionCode Releases.versionCode
-        versionName Releases.versionName
     }
     compileOptions {
         sourceCompatibility = 1.8
