@@ -63,7 +63,7 @@ class WatchlistHolder(view: View) : RecyclerView.ViewHolder(view) {
             }else{
                 strChanges = changes.toString()
                 //change text color to red
-                txtChanges.setTextColor(ContextCompat.getColor(context, R.color.colorAccentDark))
+                txtChanges.setTextColor(ContextCompat.getColor(context, R.color.colorErrorRed))
             }
         }
         txtChanges.text = strChanges
