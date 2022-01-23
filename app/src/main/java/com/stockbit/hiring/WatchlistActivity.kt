@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.stockbit.hiring.adapter.WatchlistAdapter
 import com.stockbit.hiring.di.APIService
 import com.stockbit.hiring.di.ServiceBuilder
-import com.stockbit.hiring.model.Data
+import com.stockbit.hiring.model.Object
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -20,31 +20,42 @@ class WatchlistActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_watchlist)
 
+        rvWatchlist = findViewById(R.id.rvWatchlist)
+
         getWatchlist()
     }
 
-    fun getWatchlist(){
+    private fun getWatchlist(){
         //initiate the service
         val apiService = ServiceBuilder.buildService(APIService::class.java)
-        val requestCall = apiService.getCrypto(50, "USD")
-        val stringUtils = StringUtils()
+        val requestCall = apiService.getCrypto(50, "USD", getString(R.string.API_KEY))
         //make network call asynchronously
-        requestCall.enqueue(object : Callback<List<Data>> {
-            override fun onResponse(call: Call<List<Data>>, response: Response<List<Data>>) {
+        requestCall.enqueue(object : Callback<Object> {
+            override fun onResponse(call: Call<Object>, response: Response<Object>) {
                 if (response.isSuccessful) {
                     rvWatchlist.apply {
-                        setHasFixedSize(true)
-                        layoutManager = GridLayoutManager(this@WatchlistActivity, 2)
-                        adapter = WatchlistAdapter(response.body()!!)
+                        if (response.body()!=null){
+                            setHasFixedSize(true)
+                            layoutManager = GridLayoutManager(this@WatchlistActivity, 1)
+                            adapter = WatchlistAdapter(response.body()!!)
+                        }else{
+                            setErrorMessage()
+                        }
+
                     }
                 } else{
-                        stringUtils.setMessage(this@WatchlistActivity, "Something went wrong")
+                        setErrorMessage()
                     }
                 }
 
-            override fun onFailure(call: Call<List<Data>>, t: Throwable) {
-                stringUtils.setMessage(this@WatchlistActivity, "Something went wrong")
+            override fun onFailure(call: Call<Object>, t: Throwable) {
+                setErrorMessage()
             }
         })
+    }
+
+    fun setErrorMessage(){
+        val stringUtils = StringUtils()
+        stringUtils.setMessage(this@WatchlistActivity, "Something went wrong")
     }
 }

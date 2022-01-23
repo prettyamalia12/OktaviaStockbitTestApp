@@ -5,7 +5,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object ServiceBuilder {
-    private const val URL ="https://min-api.cryptocompare.com/"
+    private const val URL = "https://min-api.cryptocompare.com/"
     //CREATE HTTP CLIENT
     private val okHttp = OkHttpClient.Builder()
 
@@ -13,6 +13,7 @@ object ServiceBuilder {
     private val builder = Retrofit.Builder().baseUrl(URL)
         .addConverterFactory(GsonConverterFactory.create())
         .client(okHttp.build())
+
 
     //create retrofit Instance
     private val retrofit = builder.build()
