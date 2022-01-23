@@ -9,7 +9,7 @@ class StringUtils {
         Toast.makeText(context, text , Toast.LENGTH_LONG).show()
     }
 
-    fun isEmpty(string: String?): Boolean{
+    fun isEmpty(string: String?) : Boolean{
         if (string != null && string == ""){
             return true
         }
